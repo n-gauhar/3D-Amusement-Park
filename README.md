@@ -18,7 +18,7 @@ The code should also be able to run on Windows except for the texture mapping co
 
 **Bmploader.cpp file:** The Bmploader.cpp is not used for running the code in MacOS. The file is included and commented out in the project. The code in Bmploader.cpp needs to be uncommented before running it on Windows.
 
-**Loadtexture() function:** The Loadtexture() function is also different for both the environments. Loadtexture() function for Windows is included and commented out in lines 68-80 in main.cpp. The LoadTexture2() block in lines 82-113 in main.cpp needs to be commented out before running it on Codeblocks as it is the function written for Xcode.
+**Loadtexture() function:** The Loadtexture() function is also different for both the environments. Loadtexture() function for Windows is included and commented out in lines 68-80 in main.cpp. The LoadTexture2() block in lines 82-113 in main.cpp needs to be commented out before running it on Codeblocks as it is the function written for Xcode. Also replace all ***ID2*** in ***glBindTexture(GL_TEXTURE_2D,ID2[9]);*** with ***ID***.
 
 **Image format:** Windows uses BMP format for texture mapping. The respective BMP formats of the textures used are included in the project in and commented out in the code from lines 3526-3555 in the main() function. Please make sure to include this lines in the code before running. Also, make sure to comment out the lines 3462-3522 in main.cpp as they load SGI images for Xcode.
 
